@@ -4,7 +4,7 @@
     Private _length As Single
     Private _area As Single
 
-    Public Sub New()
+    Public Sub New(location As Point)
         _Width = 0
         _length = 0
     End Sub

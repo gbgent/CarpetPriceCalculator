@@ -2,19 +2,19 @@
 
     Dim MyCarpet As Carpet
     Dim Room As Rectangle
+    Dim ErrColor As Color = Color.Red
+    Dim NormColor As Color = Color.LightSteelBlue
 
     Dim ErrorCodes(4) As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Set Error Codes
-        Dim x As Integer
-        For x = 0 To 4
-            ErrorCodes(x) = False
-        Next
-
+        ResetErrorCodes()
     End Sub
 
     Private Sub btn_Calculate_Click(sender As Object, e As EventArgs) Handles btn_Calculate.Click
+        'Reset Error Codes
+        ResetErrorCodes()
 
         If (ValidateEntries()) Then
 
@@ -30,6 +30,7 @@
 
             'Display Error Message(s)
             DisplayErrMessages()
+
         End If
     End Sub
 
@@ -88,6 +89,20 @@
             End If
         Next
 
+        If (ErrorCodes(0)) Then
+            txt_Color.Focus()
+        ElseIf (ErrorCodes(1)) Then
+            txt_Style.Focus()
+        ElseIf (ErrorCodes(2)) Then
+            txt_Price.Clear()
+            txt_Price.Focus()
+        ElseIf (ErrorCodes(3)) Then
+            txt_Width.Clear()
+            txt_Width.Focus()
+        ElseIf (ErrorCodes(4)) Then
+            txt_Length.Clear()
+            txt_Length.Focus()
+        End If
 
     End Sub
 
@@ -107,4 +122,15 @@
     Private Sub btn_Exit_Click(sender As Object, e As EventArgs) Handles btn_Exit.Click
         Me.Close()
     End Sub
+
+    Private Sub ResetErrorCodes()
+        'Set All Error Codes to False
+        Dim x As Integer
+        For x = 0 To 4
+            ErrorCodes(x) = False
+        Next
+
+    End Sub
+
+
 End Class

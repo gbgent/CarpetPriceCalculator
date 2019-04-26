@@ -23,20 +23,20 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.gb_CarpetData = New System.Windows.Forms.GroupBox()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.txt_Color = New System.Windows.Forms.TextBox()
-        Me.txt_Style = New System.Windows.Forms.TextBox()
         Me.txt_Price = New System.Windows.Forms.TextBox()
+        Me.txt_Style = New System.Windows.Forms.TextBox()
+        Me.txt_Color = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.lbl_Area = New System.Windows.Forms.Label()
         Me.txt_Length = New System.Windows.Forms.TextBox()
         Me.txt_Width = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.lbl_Area = New System.Windows.Forms.Label()
         Me.lbl_Cost = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.btn_Calculate = New System.Windows.Forms.Button()
@@ -62,6 +62,63 @@ Partial Class Form1
         Me.gb_CarpetData.TabStop = False
         Me.gb_CarpetData.Text = "Carpet Data"
         '
+        'txt_Price
+        '
+        Me.txt_Price.Location = New System.Drawing.Point(92, 127)
+        Me.txt_Price.Name = "txt_Price"
+        Me.txt_Price.Size = New System.Drawing.Size(173, 27)
+        Me.txt_Price.TabIndex = 6
+        '
+        'txt_Style
+        '
+        Me.txt_Style.Location = New System.Drawing.Point(92, 85)
+        Me.txt_Style.Name = "txt_Style"
+        Me.txt_Style.Size = New System.Drawing.Size(173, 27)
+        Me.txt_Style.TabIndex = 5
+        '
+        'txt_Color
+        '
+        Me.txt_Color.Location = New System.Drawing.Point(92, 47)
+        Me.txt_Color.Name = "txt_Color"
+        Me.txt_Color.Size = New System.Drawing.Size(173, 27)
+        Me.txt_Color.TabIndex = 4
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(109, 176)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(123, 20)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "{Per Square Foot}"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(38, 134)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(44, 20)
+        Me.Label3.TabIndex = 2
+        Me.Label3.Text = "Price:"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(38, 92)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(44, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Style:"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(38, 50)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(48, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Color:"
+        '
         'GroupBox2
         '
         Me.GroupBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
@@ -78,62 +135,15 @@ Partial Class Form1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
         '
-        'Label1
+        'lbl_Area
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(38, 50)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(48, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Color:"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(38, 92)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(44, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Style:"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(38, 134)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(44, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Price:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(109, 176)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(123, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "{Per Square Foot}"
-        '
-        'txt_Color
-        '
-        Me.txt_Color.Location = New System.Drawing.Point(92, 47)
-        Me.txt_Color.Name = "txt_Color"
-        Me.txt_Color.Size = New System.Drawing.Size(173, 27)
-        Me.txt_Color.TabIndex = 4
-        '
-        'txt_Style
-        '
-        Me.txt_Style.Location = New System.Drawing.Point(92, 85)
-        Me.txt_Style.Name = "txt_Style"
-        Me.txt_Style.Size = New System.Drawing.Size(173, 27)
-        Me.txt_Style.TabIndex = 5
-        '
-        'txt_Price
-        '
-        Me.txt_Price.Location = New System.Drawing.Point(92, 127)
-        Me.txt_Price.Name = "txt_Price"
-        Me.txt_Price.Size = New System.Drawing.Size(173, 27)
-        Me.txt_Price.TabIndex = 6
+        Me.lbl_Area.BackColor = System.Drawing.Color.Lavender
+        Me.lbl_Area.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.lbl_Area.Location = New System.Drawing.Point(95, 131)
+        Me.lbl_Area.Name = "lbl_Area"
+        Me.lbl_Area.Size = New System.Drawing.Size(173, 27)
+        Me.lbl_Area.TabIndex = 12
+        Me.lbl_Area.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'txt_Length
         '
@@ -175,16 +185,6 @@ Partial Class Form1
         Me.Label7.Size = New System.Drawing.Size(52, 20)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Width:"
-        '
-        'lbl_Area
-        '
-        Me.lbl_Area.BackColor = System.Drawing.Color.Lavender
-        Me.lbl_Area.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        Me.lbl_Area.Location = New System.Drawing.Point(95, 131)
-        Me.lbl_Area.Name = "lbl_Area"
-        Me.lbl_Area.Size = New System.Drawing.Size(173, 27)
-        Me.lbl_Area.TabIndex = 12
-        Me.lbl_Area.TextAlign = System.Drawing.ContentAlignment.MiddleRight
         '
         'lbl_Cost
         '
@@ -239,7 +239,7 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.SlateBlue
+        Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(652, 447)
         Me.Controls.Add(Me.btn_Exit)
         Me.Controls.Add(Me.btn_Clear)
